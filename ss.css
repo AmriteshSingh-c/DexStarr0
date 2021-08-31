@@ -16,6 +16,10 @@
    
     
 }
+.banner div{
+  background-color: #37475A;
+  max-height:90px ;
+}
 .navbar{
     display: flex;
     justify-content: space-between;
@@ -41,13 +45,14 @@
 .banner .navbar .nav_link ul li{
     list-style: none; 
     display: inline-block;
-    margin: 0 20px;
+    margin: 0 15px;
     position: relative;
 }
 .banner .navbar .nav_link ul li a{
     text-decoration: none;
     color: aliceblue;
     font-family: 'Roboto', sans-serif;
+    font-size: small;
     
 }
 .banner .navbar .nav_link ul li::after{
@@ -144,6 +149,7 @@ div .content a:hover{
 .product_name{
   margin: 9px;
   font-size: large;
+  text-transform: capitalize;
 }
 
 .col-Palang img{
@@ -160,6 +166,7 @@ div .content a:hover{
   
 }
 .price_bar h1{
+  text-transform: capitalize;
   font-size: 20px;
   
 }
@@ -170,6 +177,7 @@ div .content a:hover{
   padding:0 8px;
 }
 .price_bar a{
+  text-transform: capitalize;
     background-color: #4CAF50;
     padding: 5px 10px;
     text-align: center;
@@ -349,7 +357,8 @@ div .content a:hover{
     margin: 0px 0 0% 0;
     text-align: center;
     background-color: #37475A;
-    border-radius: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius:20px ;
     
   }
   #Back_To_Top{
@@ -362,6 +371,7 @@ div .content a:hover{
     font-size: 13px;
     border-radius: 10px;
     margin-bottom: 15px;
+    
   }
   #Back_To_Top:hover{
     background-color: #007185;
@@ -407,10 +417,14 @@ div .content a:hover{
   }
   
 
-  @media(max-width: 700px){
+  @media(max-width: 835px){
 
     .navbar{
       padding:5px 0;
+    }
+    .banner div{
+      background-color: #37475A;
+      max-height:none ;
     }
     .banner .navbar .nav_link{
       position: absolute;
@@ -419,7 +433,8 @@ div .content a:hover{
       z-index: 5;
       background: #f44336;
       width: 200px;
-      height: 100vh;
+      height: 50vh;
+      border-bottom-left-radius: 30px;
     }
     .banner .navbar .nav_link ul li{
       display: block;
